@@ -3,10 +3,16 @@ import TodoList from "./components/TodoList"
 
 function App() {
 
+  let todos = [
+    "Gym",
+    "Groceries",
+    "Clean room"
+  ];
+
   return (
     <main>
-      <TodoInput/>
-      <TodoList/>
+      <TodoInput />
+      <TodoList todos={todos}/>
     </main>
   )
 }
